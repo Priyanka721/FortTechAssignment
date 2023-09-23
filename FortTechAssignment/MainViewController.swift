@@ -20,6 +20,31 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(map)
         self.navigationController?.navigationBar.backgroundColor = .white
+        
+        let authorizationStatus: CLAuthorizationStatus
+        let locationManager = CLLocationManager()
+        
+        if #available(iOS 14, *) {
+            authorizationStatus = locationManager.authorizationStatus
+        } else {
+            authorizationStatus = CLLocationManager.authorizationStatus()
+        }
+        
+        if authorizationStatus == CLAuthorizationStatus.notDetermined {
+            locationManager.requestAlwaysAuthorization()
+        } else if authorizationStatus == CLAuthorizationStatus.denied || authorizationStatus == CLAuthorizationStatus.restricted {
+            let alert = UIAlertController(title: "Permission Denied", message: "Please go to settings and give location access permission", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) -> Void in
+                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                    return
+                }
+                
+                if UIApplication.shared.canOpenURL(settingsUrl) {
+                    UIApplication.shared.open(settingsUrl)
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

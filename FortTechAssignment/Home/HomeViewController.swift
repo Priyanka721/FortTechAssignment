@@ -27,11 +27,11 @@ class HomeViewController: UIViewController {
     }
     
     func setupHomeCollectionView() {
-        homeCollectionView.backgroundColor = .yellow
+        homeCollectionView.backgroundColor = .white
         view.addSubview(homeCollectionView)
         homeCollectionView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            homeCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            homeCollectionView.topAnchor.constraint(equalTo: view.topAnchor),
             homeCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             homeCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             homeCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)

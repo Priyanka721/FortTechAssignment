@@ -36,7 +36,7 @@ public class HomeCollectionView: UIView {
     
     private func ConfigureCollectionView() {
         addSubview(collectionView)
-        collectionView.backgroundColor = .orange
+        collectionView.backgroundColor = .clear
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -49,7 +49,6 @@ public class HomeCollectionView: UIView {
         layout.scrollDirection = .vertical
         collectionView.collectionViewLayout = layout
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//        layout.itemSize = CGSize(width: self.collectionView.frame.size.width, height: self.collectionView.frame.size.height / 5)
         layout.itemSize = CGSize(width: self.collectionView.frame.size.width, height: 100)
         layout.minimumInteritemSpacing = 2
         layout.minimumLineSpacing = 2
@@ -78,7 +77,7 @@ extension HomeCollectionView: UICollectionViewDelegate, UICollectionViewDataSour
             withReuseIdentifier: HomeCollectionViewCell.reuseIdentifier,
             for: indexPath) as? HomeCollectionViewCell
         else { fatalError("Cannot create new cell") }
-        cell.backgroundColor = .systemYellow
+        cell.backgroundColor = UIColor(red: 0.7, green: 0.2, blue: 0.4, alpha: 0.2)
         cell.setupUI(model: homeDataArray[indexPath.row])
         return cell
     }

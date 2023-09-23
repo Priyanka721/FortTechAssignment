@@ -10,5 +10,6 @@ import Foundation
 struct HomeDataModel {
     var latitude: String?
     var longitude: String?
+    var placeName: String?
     var timeStamp: String?
 }

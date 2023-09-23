@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(map)
         getUserLocation()
-        title = "View"
+        self.navigationController?.navigationBar.backgroundColor = .white
     }
     
     override func viewDidLayoutSubviews() {
@@ -43,12 +43,16 @@ class MainViewController: UIViewController {
     }
     
     func addMapPinWithLocation(with location: CLLocation) {
+        let coordinate = location.coordinate
+        let latitude = coordinate.latitude
+        let longitude = coordinate.longitude
         let pin = MKPointAnnotation()
-        pin.coordinate = location.coordinate
+        pin.coordinate = coordinate
         map.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.7, longitudeDelta: 0.7)), animated: true)
         map.addAnnotation(pin)
         LocationManager.shared.setLocationName(with: location) { [weak self] locationName in
             self?.title = locationName
+            DBHelper.shared.insert(latitude: latitude, longitude: longitude, placeName: locationName ?? "-", timeStamp: Date().getDateString() ?? "-")
         }
     }
     

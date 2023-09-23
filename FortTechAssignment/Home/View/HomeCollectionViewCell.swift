@@ -24,12 +24,16 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     private let latLongLabel: UILabel = {
         let label = UILabel()
-        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
+        label.numberOfLines = 0
+        label.textAlignment = .left
         return label
     }()
     private let dateTimeLabel: UILabel = {
         let label = UILabel()
-        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
+        label.numberOfLines = 0
+        label.textAlignment = .right
         return label
     }()
     
@@ -53,14 +57,12 @@ class HomeCollectionViewCell: UICollectionViewCell {
             cellStackView.topAnchor.constraint(equalTo: contentView.topAnchor),
             cellStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             cellStackView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 20),
-            cellStackView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20),
-            latLongLabel.heightAnchor.constraint(equalToConstant: 40),
-            dateTimeLabel.heightAnchor.constraint(equalToConstant: 40)
+            cellStackView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20)
         ])
     }
     
     func setupUI(model: HomeDataModel) {
-        latLongLabel.text = "Lat: \(model.latitude ?? "-"), Long: \(model.longitude ?? "-")"
+        latLongLabel.text = "Place:\(model.placeName ?? "-")\nLat: \(model.latitude ?? "-")\nLong: \(model.longitude ?? "-")"
         dateTimeLabel.text = model.timeStamp ?? "-"
     }
 }

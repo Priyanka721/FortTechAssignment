@@ -9,6 +9,7 @@ import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "HomeCollectionViewCellIdentifier"
+    var homeDataModel: HomeDataModel?
     
     private let cellStackView: UIStackView = {
         let stackView = UIStackView()
@@ -23,13 +24,11 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     private let latLongLabel: UILabel = {
         let label = UILabel()
-        label.text = "Hello"
         label.textAlignment = .center
         return label
     }()
     private let dateTimeLabel: UILabel = {
         let label = UILabel()
-        label.text = "World"
         label.textAlignment = .center
         return label
     }()
@@ -58,5 +57,10 @@ class HomeCollectionViewCell: UICollectionViewCell {
             latLongLabel.heightAnchor.constraint(equalToConstant: 40),
             dateTimeLabel.heightAnchor.constraint(equalToConstant: 40)
         ])
+    }
+    
+    func setupUI(model: HomeDataModel) {
+        latLongLabel.text = "Lat: \(model.latitude ?? "-"), Long: \(model.longitude ?? "-")"
+        dateTimeLabel.text = model.timeStamp ?? "-"
     }
 }

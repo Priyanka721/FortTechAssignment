@@ -33,6 +33,11 @@ class MainViewController: UIViewController {
             DispatchQueue.main.async {
                 guard let `self` = self else { return }
                 self.addMapPinWithLocation(with: location)
+                let dispatchWorkItem = DispatchWorkItem { [weak self] in
+                    guard let `self` = self else { return }
+                    self.navigateToHomeViewController()
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: dispatchWorkItem)
             }
         }
     }
@@ -45,6 +50,9 @@ class MainViewController: UIViewController {
         LocationManager.shared.setLocationName(with: location) { [weak self] locationName in
             self?.title = locationName
         }
-        
+    }
+    
+    func navigateToHomeViewController() {
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
     }
 }

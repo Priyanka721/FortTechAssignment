@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200FDAE92ABEF0E20015D343 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200FDAE82ABEF0E20015D343 /* HomeViewController.swift */; };
+		200FDAEC2ABEF1220015D343 /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200FDAEB2ABEF1220015D343 /* HomeCollectionView.swift */; };
+		200FDAEE2ABEF4E10015D343 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200FDAED2ABEF4E10015D343 /* HomeCollectionViewCell.swift */; };
+		20FA0B452ABE00BD0081025B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0B442ABE00BD0081025B /* AppDelegate.swift */; };
+		20FA0B4E2ABE00BE0081025B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20FA0B4D2ABE00BE0081025B /* Assets.xcassets */; };
+		20FA0B512ABE00BE0081025B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FA0B4F2ABE00BE0081025B /* LaunchScreen.storyboard */; };
+		20FA0B5C2ABE00BE0081025B /* FortTechAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0B5B2ABE00BE0081025B /* FortTechAssignmentTests.swift */; };
+		20FA0B662ABE00BE0081025B /* FortTechAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0B652ABE00BE0081025B /* FortTechAssignmentUITests.swift */; };
+		20FA0B682ABE00BE0081025B /* FortTechAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0B672ABE00BE0081025B /* FortTechAssignmentUITestsLaunchTests.swift */; };
+		20FA0B762ABE20E70081025B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0B742ABE20E70081025B /* MainViewController.swift */; };
+		20FA0B772ABE20E70081025B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20FA0B752ABE20E70081025B /* MainViewController.xib */; };
+		20FA0B7A2ABE26770081025B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0B792ABE26770081025B /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20FA0B582ABE00BE0081025B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20FA0B392ABE00BD0081025B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20FA0B402ABE00BD0081025B;
+			remoteInfo = FortTechAssignment;
+		};
+		20FA0B622ABE00BE0081025B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20FA0B392ABE00BD0081025B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20FA0B402ABE00BD0081025B;
+			remoteInfo = FortTechAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		200FDAE82ABEF0E20015D343 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		200FDAEB2ABEF1220015D343 /* HomeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
+		200FDAED2ABEF4E10015D343 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		20FA0B412ABE00BD0081025B /* FortTechAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortTechAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FA0B442ABE00BD0081025B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20FA0B4D2ABE00BE0081025B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20FA0B502ABE00BE0081025B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20FA0B522ABE00BE0081025B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20FA0B572ABE00BE0081025B /* FortTechAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortTechAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FA0B5B2ABE00BE0081025B /* FortTechAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortTechAssignmentTests.swift; sourceTree = "<group>"; };
+		20FA0B612ABE00BE0081025B /* FortTechAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortTechAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FA0B652ABE00BE0081025B /* FortTechAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortTechAssignmentUITests.swift; sourceTree = "<group>"; };
+		20FA0B672ABE00BE0081025B /* FortTechAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortTechAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20FA0B742ABE20E70081025B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		20FA0B752ABE20E70081025B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		20FA0B792ABE26770081025B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20FA0B3E2ABE00BD0081025B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA0B542ABE00BE0081025B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA0B5E2ABE00BE0081025B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		200FDAE72ABEF0CF0015D343 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				200FDAEA2ABEF0FB0015D343 /* View */,
+				200FDAE82ABEF0E20015D343 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		200FDAEA2ABEF0FB0015D343 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				200FDAEB2ABEF1220015D343 /* HomeCollectionView.swift */,
+				200FDAED2ABEF4E10015D343 /* HomeCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20FA0B382ABE00BD0081025B = {
+			isa = PBXGroup;
+			children = (
+				20FA0B432ABE00BD0081025B /* FortTechAssignment */,
+				20FA0B5A2ABE00BE0081025B /* FortTechAssignmentTests */,
+				20FA0B642ABE00BE0081025B /* FortTechAssignmentUITests */,
+				20FA0B422ABE00BD0081025B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20FA0B422ABE00BD0081025B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20FA0B412ABE00BD0081025B /* FortTechAssignment.app */,
+				20FA0B572ABE00BE0081025B /* FortTechAssignmentTests.xctest */,
+				20FA0B612ABE00BE0081025B /* FortTechAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20FA0B432ABE00BD0081025B /* FortTechAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				20FA0B782ABE265C0081025B /* LocationManager */,
+				200FDAE72ABEF0CF0015D343 /* Home */,
+				20FA0B442ABE00BD0081025B /* AppDelegate.swift */,
+				20FA0B4D2ABE00BE0081025B /* Assets.xcassets */,
+				20FA0B4F2ABE00BE0081025B /* LaunchScreen.storyboard */,
+				20FA0B522ABE00BE0081025B /* Info.plist */,
+				20FA0B742ABE20E70081025B /* MainViewController.swift */,
+				20FA0B752ABE20E70081025B /* MainViewController.xib */,
+			);
+			path = FortTechAssignment;
+			sourceTree = "<group>";
+		};
+		20FA0B5A2ABE00BE0081025B /* FortTechAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				20FA0B5B2ABE00BE0081025B /* FortTechAssignmentTests.swift */,
+			);
+			path = FortTechAssignmentTests;
+			sourceTree = "<group>";
+		};
+		20FA0B642ABE00BE0081025B /* FortTechAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20FA0B652ABE00BE0081025B /* FortTechAssignmentUITests.swift */,
+				20FA0B672ABE00BE0081025B /* FortTechAssignmentUITestsLaunchTests.swift */,
+			);
+			path = FortTechAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		20FA0B782ABE265C0081025B /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				20FA0B792ABE26770081025B /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20FA0B402ABE00BD0081025B /* FortTechAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20FA0B6B2ABE00BE0081025B /* Build configuration list for PBXNativeTarget "FortTechAssignment" */;
+			buildPhases = (
+				20FA0B3D2ABE00BD0081025B /* Sources */,
+				20FA0B3E2ABE00BD0081025B /* Frameworks */,
+				20FA0B3F2ABE00BD0081025B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FortTechAssignment;
+			productName = FortTechAssignment;
+			productReference = 20FA0B412ABE00BD0081025B /* FortTechAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20FA0B562ABE00BE0081025B /* FortTechAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20FA0B6E2ABE00BE0081025B /* Build configuration list for PBXNativeTarget "FortTechAssignmentTests" */;
+			buildPhases = (
+				20FA0B532ABE00BE0081025B /* Sources */,
+				20FA0B542ABE00BE0081025B /* Frameworks */,
+				20FA0B552ABE00BE0081025B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20FA0B592ABE00BE0081025B /* PBXTargetDependency */,
+			);
+			name = FortTechAssignmentTests;
+			productName = FortTechAssignmentTests;
+			productReference = 20FA0B572ABE00BE0081025B /* FortTechAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20FA0B602ABE00BE0081025B /* FortTechAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20FA0B712ABE00BE0081025B /* Build configuration list for PBXNativeTarget "FortTechAssignmentUITests" */;
+			buildPhases = (
+				20FA0B5D2ABE00BE0081025B /* Sources */,
+				20FA0B5E2ABE00BE0081025B /* Frameworks */,
+				20FA0B5F2ABE00BE0081025B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20FA0B632ABE00BE0081025B /* PBXTargetDependency */,
+			);
+			name = FortTechAssignmentUITests;
+			productName = FortTechAssignmentUITests;
+			productReference = 20FA0B612ABE00BE0081025B /* FortTechAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20FA0B392ABE00BD0081025B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					20FA0B402ABE00BD0081025B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					20FA0B562ABE00BE0081025B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 20FA0B402ABE00BD0081025B;
+					};
+					20FA0B602ABE00BE0081025B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 20FA0B402ABE00BD0081025B;
+					};
+				};
+			};
+			buildConfigurationList = 20FA0B3C2ABE00BD0081025B /* Build configuration list for PBXProject "FortTechAssignment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20FA0B382ABE00BD0081025B;
+			productRefGroup = 20FA0B422ABE00BD0081025B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20FA0B402ABE00BD0081025B /* FortTechAssignment */,
+				20FA0B562ABE00BE0081025B /* FortTechAssignmentTests */,
+				20FA0B602ABE00BE0081025B /* FortTechAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20FA0B3F2ABE00BD0081025B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA0B512ABE00BE0081025B /* LaunchScreen.storyboard in Resources */,
+				20FA0B772ABE20E70081025B /* MainViewController.xib in Resources */,
+				20FA0B4E2ABE00BE0081025B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA0B552ABE00BE0081025B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA0B5F2ABE00BE0081025B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20FA0B3D2ABE00BD0081025B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA0B452ABE00BD0081025B /* AppDelegate.swift in Sources */,
+				20FA0B762ABE20E70081025B /* MainViewController.swift in Sources */,
+				20FA0B7A2ABE26770081025B /* LocationManager.swift in Sources */,
+				200FDAE92ABEF0E20015D343 /* HomeViewController.swift in Sources */,
+				200FDAEC2ABEF1220015D343 /* HomeCollectionView.swift in Sources */,
+				200FDAEE2ABEF4E10015D343 /* HomeCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA0B532ABE00BE0081025B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA0B5C2ABE00BE0081025B /* FortTechAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20FA0B5D2ABE00BE0081025B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA0B682ABE00BE0081025B /* FortTechAssignmentUITestsLaunchTests.swift in Sources */,
+				20FA0B662ABE00BE0081025B /* FortTechAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20FA0B592ABE00BE0081025B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20FA0B402ABE00BD0081025B /* FortTechAssignment */;
+			targetProxy = 20FA0B582ABE00BE0081025B /* PBXContainerItemProxy */;
+		};
+		20FA0B632ABE00BE0081025B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20FA0B402ABE00BD0081025B /* FortTechAssignment */;
+			targetProxy = 20FA0B622ABE00BE0081025B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20FA0B4F2ABE00BE0081025B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20FA0B502ABE00BE0081025B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20FA0B692ABE00BE0081025B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20FA0B6A2ABE00BE0081025B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20FA0B6C2ABE00BE0081025B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FortTechAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swifting.FortTechAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		20FA0B6D2ABE00BE0081025B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FortTechAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swifting.FortTechAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		20FA0B6F2ABE00BE0081025B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swifting.FortTechAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FortTechAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FortTechAssignment";
+			};
+			name = Debug;
+		};
+		20FA0B702ABE00BE0081025B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swifting.FortTechAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FortTechAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FortTechAssignment";
+			};
+			name = Release;
+		};
+		20FA0B722ABE00BE0081025B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swifting.FortTechAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FortTechAssignment;
+			};
+			name = Debug;
+		};
+		20FA0B732ABE00BE0081025B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swifting.FortTechAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FortTechAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20FA0B3C2ABE00BD0081025B /* Build configuration list for PBXProject "FortTechAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA0B692ABE00BE0081025B /* Debug */,
+				20FA0B6A2ABE00BE0081025B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20FA0B6B2ABE00BE0081025B /* Build configuration list for PBXNativeTarget "FortTechAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA0B6C2ABE00BE0081025B /* Debug */,
+				20FA0B6D2ABE00BE0081025B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20FA0B6E2ABE00BE0081025B /* Build configuration list for PBXNativeTarget "FortTechAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA0B6F2ABE00BE0081025B /* Debug */,
+				20FA0B702ABE00BE0081025B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20FA0B712ABE00BE0081025B /* Build configuration list for PBXNativeTarget "FortTechAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FA0B722ABE00BE0081025B /* Debug */,
+				20FA0B732ABE00BE0081025B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20FA0B392ABE00BD0081025B /* Project object */;
+}

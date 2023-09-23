@@ -48,6 +48,6 @@ extension LocationManager: CLLocationManagerDelegate {
             return
         }
         completion?(location)
-//        manager.stopUpdatingLocation()
+        manager.stopUpdatingLocation()
     }
 }

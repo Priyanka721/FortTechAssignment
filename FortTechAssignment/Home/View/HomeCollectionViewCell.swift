@@ -62,7 +62,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     func setupUI(model: HomeDataModel) {
-        latLongLabel.text = "Place:\(model.placeName ?? "-")\nLat: \(model.latitude ?? "-")\nLong: \(model.longitude ?? "-")"
+        latLongLabel.text = "Place: \(model.placeName ?? "-")\nLat: \(model.latitude ?? "-")\nLong: \(model.longitude ?? "-")"
         dateTimeLabel.text = model.timeStamp ?? "-"
     }
 }

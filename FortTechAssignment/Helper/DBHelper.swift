@@ -60,7 +60,7 @@ class DBHelper {
         if sqlite3_prepare_v2(dataBase, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK {
             sqlite3_bind_double(insertStatement, 1, latitude)
             sqlite3_bind_double(insertStatement, 2, longitude)
-            sqlite3_bind_text(insertStatement, 3, placeName, -1, nil)
+            sqlite3_bind_text(insertStatement, 3, (placeName as NSString).utf8String, -1, nil)
             sqlite3_bind_text(insertStatement, 4, (timeStamp as NSString).utf8String, -1, nil)
             
             if sqlite3_step(insertStatement) == SQLITE_DONE {

@@ -19,8 +19,12 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(map)
-        getUserLocation()
         self.navigationController?.navigationBar.backgroundColor = .white
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getUserLocation()
     }
     
     override func viewDidLayoutSubviews() {
